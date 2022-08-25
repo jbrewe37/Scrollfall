@@ -15,7 +15,6 @@ class CarouselApp(App):
         self.current_slide = 0
     
     def build(self):
-        self.icon = 'Scrollfall_icon.png'
         self.carousel = Carousel(direction='right', loop=False)
 
         found_card = 0
