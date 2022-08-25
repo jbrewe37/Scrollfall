@@ -28,8 +28,8 @@ class CarouselApp(App):
                 found_card = 1
             except:
                 pass
-        one = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
-        self.carousel.add_widget(one)
+        new = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
+        self.carousel.add_widget(new)
 
         found_card = 0
         while found_card == 0:
@@ -41,8 +41,8 @@ class CarouselApp(App):
                 found_card = 1
             except:
                 pass
-        two = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
-        self.carousel.add_widget(two)
+        new = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
+        self.carousel.add_widget(new)
         
         found_card = 0
         while found_card == 0:
@@ -54,8 +54,8 @@ class CarouselApp(App):
                 found_card = 1
             except:
                 pass
-        two = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
-        self.carousel.add_widget(two)
+        new = AsyncImage(source=src, allow_stretch=True, keep_ratio=True)
+        self.carousel.add_widget(new)
 
         event = Clock.schedule_interval(self.my_callback, 1/5)
 
